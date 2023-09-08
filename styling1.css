@@ -1,0 +1,61 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+.bmwworld
+{
+background-image: url(images/bmwworld.jpg);
+min-height: 100vh;
+
+}
+.eventdetails
+{
+margin:5%;
+}
+.bmwjoyfest
+{
+    margin:5%;
+
+}
+.joyfest1 {
+    padding-top: 1%;
+    background: url("images/joyfest1.jpg") no-repeat;
+    transition: 0.5s;
+}
+
+.joyfest1:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+.joyfest2
+{
+    position: absolute;
+    left:37.5%;
+    top:104.5%;
+
+}
+.joyfest3
+{
+    position: absolute;
+    left:5%;
+    top:197%;
+}
+.joyfest4
+{
+    position: absolute;
+    left:37.7%;
+    top:197%;
+}
+.joyfest5
+{
+    position: absolute;
+    top:265%;
+    left:18%;
+}
+.joyfest6
+{
+    position: absolute;
+    top:253%;
+    left:38%;
+}

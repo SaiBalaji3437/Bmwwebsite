@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers Test Drive</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    
+    /* .special
+    {
+        position:absolute;
+        top:10%;
+        left:90%;
+    } */
+    
+      </style>
+</head>
+<body>
+     <p style="font-size:25px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;position: absolute;top:2%;left:6%;">To book your test drive now, kindly fill in your information below.</p>
+    <img src="images/bmwmainlogo.png" alt="" style="position: absolute;top:2%;left:91%;">
+    <img src="images/specialoffer.png" alt=""style="position: absolute;top:20%;left:50%;">
+    <div class="special" style="position:relative;margin-top:6%;margin-right:60%;"> 
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="car">Preferred Location:</label>
+            <select name="" id="" style="width: 100%;padding: 9px;margin-top: 5px;">
+            <option value="">Hyderabad</option>
+            <option value="">Chennai</option>
+            <option value="">Mumbai</option>
+        </select>
+        
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            <input type="submit" value="Request a Test Drive">
+          </form>
+    </div> 
+   
+</body>
+</html>

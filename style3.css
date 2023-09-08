@@ -1,0 +1,20 @@
+.special
+{
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.text{
+    display: flex;
+    flex-basis: 31%;
+    font-size: 34px;
+}
+.text ul li
+{
+    display: inline-block;
+
+}
+img
+{
+    float: left;
+}

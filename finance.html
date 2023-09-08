@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="finance">
+        <div class="finance1">
+            <p style="font-size: 50px; color: aliceblue; position: absolute; top:100px;left:30px;font-family:Arial, Helvetica, sans-serif;">BMW 360<sup>°</sup> FINANACE PLAN.</p>
+            <p style="font-size:25px;color: white; position: absolute; top:190px;left:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">The JOY of loan,lease,and subscription in one plan.</p>
+        </div>
+    </section>
+    <section>
+        <p style="font-size:50px; position: absolute; top:104%; left:2%;color: black;">BMW 360˚ FINANCE PLAN.</p>
+        <p style="font-size:20px;position: absolute; top:113%;left:2%; color:black;">Be it flexibility, complete peace of mind or the ability to drive a new BMW more often, the BMW 360˚ Finance Plan caters <br> to all your needs. This plan makes owning a BMW an absolute JOY with a host of additional privileges like:</p>
+        <div class="finance2">
+            <img src="images/finance1.jpg" alt="">
+            <p style="font-size: 30px; color: black;">Low Monthly Payment</p>
+            <p style="font-size:20px ; color: black;">40% lower monthly payment as compared <br> to any standard loan</p>
+        </div>
+        <div class="finance3">
+            <img src="images/finance2.jpg" alt="">
+            <p style="font-size: 30px; color: black;">Assured Buyback</p>
+            <p style="font-size:20px ; color: black;">Future-proof your BMW against any market <br> fluctuations or external risks</p>
+        </div>
+        <div class="finance4">
+            <img src="images/finance3.jpg" alt="">
+            <p style="font-size: 30px; color: black;">Ultimate End-of-Term <br> Flexibility</p>
+            <p style="font-size:20px ; color: black;">Freedom to upgrade,return,retain or<br> refinance your BMW at the end of your<br>contract term</p>
+        </div>
+        
+    </section>
+    <p style="font-size: 30px; color: black; position: absolute; top:198%;">FINANCE CALCULATOR</p>
+        <hr>
+    <section class="financecal">
+        <script>
+            function calculateFinance() {
+              // Get input values
+              var carPrice = parseFloat(document.getElementById("carPrice").value);
+              var downPayment = parseFloat(document.getElementById("downPayment").value);
+              var interestRate = parseFloat(document.getElementById("interestRate").value);
+              var loanTerm = parseFloat(document.getElementById("loanTerm").value);
+        
+              // Perform calculations
+              var loanAmount = carPrice - downPayment;
+              var monthlyInterestRate = interestRate / 100 / 12;
+              var numPayments = loanTerm * 12;
+              var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numPayments));
+        
+              // Display the result
+              document.getElementById("monthlyPayment").innerHTML = monthlyPayment.toFixed(2);
+            }
+          </script>
+        <h1>Car Finance Calculator</h1>
+  
+  <label for="carPrice">Car Price:</label>
+  <input type="number" id="carPrice" step="0.01">
+  
+  <label for="downPayment">Down Payment:</label>
+  <input type="number" id="downPayment" step="0.01">
+  
+  <label for="interestRate">Interest Rate (%):</label>
+  <input type="number" id="interestRate" step="0.01">
+  
+  <label for="loanTerm">Loan Term (years):</label>
+  <input type="number" id="loanTerm" step="1">
+  
+  <button onclick="calculateFinance()">Calculate Monthly Payment</button>
+  
+  <h2>Monthly Payment:</h2>
+  <div id="monthlyPayment"></div>
+    </section>
+</body>
+</html>

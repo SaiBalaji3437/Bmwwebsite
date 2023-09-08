@@ -1,0 +1,66 @@
+
+*{
+    margin: 1%;
+}
+.allmodel1 
+{
+    position: absolute;
+    left:55%;
+    top:20%;
+}
+.xseries2
+{
+    position: absolute;
+    left:40%;
+    top:105%;
+}
+.xseries3
+{
+position: absolute;
+left:70%;
+top:105%;
+}
+.mseries1
+{
+    position: absolute;
+    left:3%;
+    top:150%;
+}
+.mseries2{
+    position: absolute;
+    left:35%;
+    top:150%;
+}
+.mseries3
+{
+    position: absolute;
+    left:70%;
+    top:150%;   
+}
+.mseries4
+{
+    position: absolute;
+    left:5%;
+    top:210%; 
+}
+.mseries5
+{
+    position: absolute;
+    left:35%;
+    top:210%; 
+}
+/* .parts-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap:2 rem;
+}
+.parts-container .box
+{
+    flex:1 1 17rem;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+} */ */

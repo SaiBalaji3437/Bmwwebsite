@@ -1,0 +1,72 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+.models
+{
+    min-height: 100vh;
+    width:100%;
+    background: transparent;
+    background-image: url(images/modellogo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+.modelclass
+{
+    position: absolute;
+    top:630px;
+    left:650px;
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom:10px ;
+    background: transparent;
+    border:2px  ;
+    background-color:blue;
+    color: white;
+}
+.specialoffers
+{
+    position: absolute;
+    text-decoration: none;
+    top:705px;
+    left:30px;
+    font-size:25px;
+    color:whitesmoke;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.download-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:133%;
+  
+  }
+  
+  .download-card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .download-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .download-title {
+    font-size:30px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .download-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+

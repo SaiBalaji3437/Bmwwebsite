@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purchase Details</title>
+</head>
+<body>
+  <div id="heading"><h2 style="position: absolute;left:5%;font-size: 40px;">Car Details</h2></div>
+  <p id="selected-car" style="position: absolute;font-size: 30px;top:10%;left:8%;"></p>
+  <p id="selected-price"style="position: absolute;font-size: 30px;top:17%;left:8%;"></p>
+  <div id="heading1"><h2 style="position: absolute;top:26%;left:5%;font-size: 40px;" class="heading">Register Your Interest</h2></div>
+  
+  <form id="user-form">
+    <input type="text" id="name" placeholder="Name*" style="width:700px;padding: 20px;position: absolute;top:40%;" required>
+    <input type="text" id="surname" placeholder="Surname*" style="width:700px;padding: 20px;position: absolute;top:40%;left:770px;" required>
+    <input type="email" placeholder="Email*" style="width:1460px;padding: 20px;margin-top: 30px;position: absolute;top:50%;" required>  
+    <input type="tel" placeholder="Phone number*" pattern="[1-9]{1}[0-9]{9}" style="width:1422px;padding: 20px;margin-top: 30px;position: absolute;top:64%;" required> 
+    <label for="" style="font-size: 30px;position: absolute;top:80%;font-family: Arial, Helvetica, sans-serif;">Preferred City</label><br>
+    <select name="" id=""  style="width: 20%; size: 30%;position: absolute;top:80%;left:15%;height:5%;" placeholder="City">
+      <option value="">Hyderabad</option>
+      <option value="">Chennai</option>
+    </select>
+    <input type="checkbox" style="width:20px;position:absolute;top:88.2%;" required> 
+    <label for="" style="color: black;font-size: 20px;position: absolute;top:88%;font-family: Arial, Helvetica, sans-serif;left:2.3%;">Interested in BMW Financial Services' plans and offers.</label>
+    <button type="submit" style="margin-top: 32px;background: #1c00b5;
+        width:100px;
+        border:none;
+        outline:none;
+        color: #fff;
+        height:35px;
+        border-radius:30px;
+        margin-top:20px;
+        box-shadow: 0px 5px 15px 0px ;
+        position: absolute;
+        top:91%;">REGISTER</button>
+  </form>
+  <div id="order-success" style="display: none;">
+
+  </div>
+  <script>
+    // Function to initialize the car details in the new window
+    function initialize(carName, price) {
+      document.getElementById('selected-car').textContent = "Selected Car: " + carName;
+      document.getElementById('selected-price').textContent = "Price:₹" + price.toLocaleString();
+      
+
+
+
+    }
+
+    // JavaScript function to handle the form submission
+    document.getElementById('user-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the user's entered details
+      var name = document.getElementById('name').value;
+      var surname=document.getElementById('surname').value;
+    //   var email = document.getElementById('email').value;
+    //   var phone = document.getElementById('phone').value;
+    document.getElementById('selected-car').style.display = 'none';
+    document.getElementById('selected-price').style.display = 'none';
+   document.getElementById('user-form').style.display = 'none';
+   document.getElementById('heading').style.display = 'none';
+   document.getElementById('heading1').style.display = 'none';
+
+
+      // Perform necessary actions with the user details (e.g., place order, send confirmation, etc.)
+      alert('Thank you,'+surname+ name + '! Your registration is successful.');
+      window.close();
+      // Hide the form
+      document.getElementById('user-form').style.display = 'none';
+
+      // Show the order success message and image
+      document.getElementById('order-success').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

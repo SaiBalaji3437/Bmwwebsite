@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p style="font-size: 50px; color: black; margin-left: 7%; margin-top:2%;font-family:Arial, Helvetica, sans-serif;">Book a new car and explore it online</p>
+    <div class="buynav">
+        <ul>
+            <li>✅ Book online directly</li>
+            <li>✅ Get best offers</li>
+            <li>✅ Hassle free</li>
+            <li>✅ Get assited</li>
+        </ul>
+    </div>
+    <div class="buynowcars">
+        <div class="car">
+            <img src="images/buy5.png" alt="BMW M4 Competition Coupe with M XDrive">
+            <!-- <h3>Car 1</h3> -->
+            <p>Price: <span id="car1-price">₹14,750,000</span></p>
+            <button onclick="buyCar('BMW M4 Competition Coupe with M XDrive',14+','+750+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy2.png" alt="BMW XM">
+            <!-- <h3>Car 1</h3> -->
+            <p>Price: <span id="car2-price">₹26,000,000</span></p>
+            <button onclick="buyCar('BMW XM',26+','+'000'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy3.png" alt="BMW M340i">
+            <!-- <h3>Car 1</h3> -->
+            <p>Price: <span id="car3-price">₹6,920,000</span></p>
+            <button onclick="buyCar('BMW M340i',6+','+'920'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy4.png" alt="BMW M8 Competition Coupe">
+            <!-- <h3>Car 1</h3> -->
+            <p>Price: <span id="car4-price">₹24,400,000</span></p>
+            <button onclick="buyCar('BMW M8 Competition Coupe',24+','+'400'+','+'000')">Buy Now</button>
+        </div>
+        <p style="font-size:40px;font-family:Arial, Helvetica, sans-serif;color: black;">M</p>
+        <div class="car">
+            <img src="images/buy8.png" alt="BMW X3 M40i">
+            <p>Price: <span id="car5-price">₹8,650,000</span></p>
+            <button onclick="buyCar('BMW X3 M40i',8+','+'650'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy9.png" alt="BMW X7">
+            <p>Price: <span id="car6-price">₹12,200,000</span></p>
+            <button onclick="buyCar('BMW X7',12+','+'200'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy10.png" alt="BMW X5">
+            <p>Price: <span id="car7-price">₹6,890,000</span></p>
+            <button onclick="buyCar('BMW X5', 6+','+'890'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buy11.png" alt="BMW X3">
+            <p>Price: <span id="car8-price">₹6,750,000</span></p>
+            <button onclick="buyCar('BMW X3', 6+','+'750'+','+'000')">Buy Now</button>
+        </div>
+        <p style="font-size:40px;font-family: Arial, Helvetica, sans-serif;color: black;">X</p>
+        <div class="car">
+            <img src="images/buyelectric1.png" alt="BMW iX">
+            <p>Price: <span id="car9-price">₹12,100,000</span></p>
+            <button onclick="buyCar('BMW iX',12+','+'100'+','+'000')">Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/buyelectric2.png" alt="BMW i4">
+            <p>Price: <span id="car10-price">₹7,390,000</span></p>
+            <pre></pre>
+            <button onclick="buyCar('BMW i4',7+','+'390'+','+'000')" >Buy Now</button>
+        </div>
+        <p style="font-size:40px;color: black;font-family: Arial, Helvetica, sans-serif;">BMW i</p>
+    </div> 
+    <!-- <div class="order-summary">
+        <h2>Order Summary</h2>
+        <p id="selected-car"></p>
+        <p id="selected-price"></p>
+        <form id="user-details">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </div> -->
+</body>
+</html>
